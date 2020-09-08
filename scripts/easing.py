@@ -77,7 +77,7 @@ def EaseInOutBack(t):
         return ((c+1) * t * t * t - c * t * t) * 0.5
     else:
         t = (1.0 - t) * 2.0
-        return (1.0 - ((c+1) * t * t * t - c * t * t)) * 0.5
+        return 1.0 - ((c+1) * t * t * t - c * t * t) * 0.5
 
 def EaseOutBounce(t):
     if t < 4.0 / 11.0:
